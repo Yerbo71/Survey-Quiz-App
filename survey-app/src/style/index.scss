@@ -1,0 +1,55 @@
+@import "../../survey-app/src/style/vars.scss";
+
+
+body{
+    font-family: monospace;
+    color: #2d264b;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+	height: 100vh;
+	background: linear-gradient(334deg, #6b97f7, #7525e2, #f7137e);
+	background-size: 180% 180%;
+	animation: body-animation 3s ease infinite;
+}
+@keyframes body-animation {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+@media (max-width: 480px) {
+    body {
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+        width: 100vw;
+    }
+
+    .quiz-container {
+        width: 97%;
+        padding: 30px 20px;
+    }
+
+    .active-question-no {
+        font-size: 24px;
+    }
+
+    .total-question {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
